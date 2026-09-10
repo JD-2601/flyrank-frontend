@@ -1,0 +1,24 @@
+# Project Rules — flyrank-frontend
+
+## Context
+This repository is the capstone project for the FlyRank internship,
+Frontend AI Engineering track. It is currently in the setup phase;
+the specific application to be built will be defined in a later assignment.
+
+## Stack (to be finalized)
+- Language: JavaScript/TypeScript (preferred once a framework is chosen)
+- Frontend framework: TBD (likely React, given the track focus)
+- Package manager: npm
+- Node.js: LTS version
+
+## Conventions
+- Commit messages follow Conventional Commits (e.g. `feat:`, `fix:`, `docs:`, `chore:`)
+- Keep components small and single-purpose once frontend work begins
+- Prefer clear, descriptive naming over abbreviations
+- Document any AI-assisted code generation in commit messages where relevant
+
+## AI assistant guidance
+- When suggesting code, favor readable, well-commented solutions over clever one-liners,
+  since this is a learning/internship context
+- Flag any security or environment-variable handling concerns explicitly
+- Ask before introducing new dependencies
