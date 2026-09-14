@@ -22,3 +22,8 @@ the specific application to be built will be defined in a later assignment.
   since this is a learning/internship context
 - Flag any security or environment-variable handling concerns explicitly
 - Ask before introducing new dependencies
+
+
+- Precise, verifiable prompts (explicit constraints + a test/verification step) beat vague prompts — vague prompts shift review burden onto me instead of the AI.
+- Branch each round of an AI experiment from a truly clean base (main, before any scaffolding exists) — branching after one round already built an app makes diffs noisy and hard to compare.
+- Don't assume accessibility (aria-invalid, aria-describedby, proper labeling) is included unless explicitly requested in the prompt — AI tools don't reliably add it by default.
