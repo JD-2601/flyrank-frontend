@@ -1,0 +1,160 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0f1115;
+  color: #e8e8ec;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #161922;
+  border-bottom: 1px solid #23273a;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.nav a {
+  color: #c7c9d9;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+.brand {
+  font-weight: 700;
+  color: #fff !important;
+  font-size: 1.1rem;
+}
+
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-form input {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #2b3044;
+  background: #1c2030;
+  color: #fff;
+  min-width: 220px;
+}
+
+.search-form button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #4f6df5;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background: #3d5adf;
+}
+
+.page {
+  padding: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hint {
+  color: #9698ab;
+  font-size: 0.95rem;
+}
+
+.hint.error {
+  color: #f27777;
+}
+
+.show-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.show-card {
+  background: #161922;
+  border: 1px solid #23273a;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.show-card-placeholder {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1c2030;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.show-card-body {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.show-card-body h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.show-meta {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #9698ab;
+}
+
+.fav-btn {
+  margin-top: 0.4rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #2b3044;
+  background: transparent;
+  color: #c7c9d9;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.fav-btn.active {
+  background: #4f6df5;
+  border-color: #4f6df5;
+  color: #fff;
+}
+
+.fav-btn:hover {
+  border-color: #4f6df5;
+}
