@@ -1,0 +1,18 @@
+:root { color-scheme: light; font-family: Inter, system-ui, sans-serif; color: #111; background: #fafafa; }
+body { margin: 0; }
+.playground { max-width: 640px; margin: 0 auto; padding: 32px 20px; }
+.lede { color: #555; }
+section { margin: 28px 0; }
+button { font: inherit; padding: 8px 14px; border: 1px solid #111; background: #fff; border-radius: 6px; cursor: pointer; }
+button:focus-visible, [role="tabpanel"]:focus-visible, .modal:focus-visible, input:focus-visible { outline: 3px solid #4f6df5; outline-offset: 2px; }
+.disclosure-panel { padding: 8px 0 0 4px; }
+.tablist { display: flex; gap: 4px; border-bottom: 1px solid #ddd; }
+.tab { border: 0; border-bottom: 3px solid transparent; border-radius: 0; background: transparent; }
+.tab[aria-selected="true"] { border-bottom-color: #4f6df5; font-weight: 600; }
+.tabpanel { padding: 12px 4px; }
+.backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: grid; place-items: center; }
+.modal { background: #fafafa; padding: 20px; border-radius: 10px; width: min(420px, 92vw); display: grid; gap: 10px; }
+.modal-header { display: flex; justify-content: space-between; align-items: center; }
+.modal-header h2 { margin: 0; font-size: 1.2rem; }
+.modal-actions { display: flex; gap: 8px; justify-content: flex-end; }
+input { padding: 8px; border: 1px solid #111; border-radius: 6px; font: inherit; }
